@@ -9,7 +9,7 @@ import cors from "cors";
 const app = express();
 
 app.use(cors({
-    origin: "https://casino-remedial-delta.vercel.app",
+    origin: "*",
     credentials: true
   }));
 
