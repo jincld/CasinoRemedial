@@ -18,14 +18,14 @@ const Juegos = () => {
   }, []);
 
   const fetchJuegos = async () => {
-    const response = await fetch("http://localhost:4000/api/juegos");
+    const response = await fetch("https://casinoremedial.onrender.com/api/juegos");
     const data = await response.json();
     setJuegos(data);
   };
 
   const handleAddJuego = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/api/juegos", {
+    const response = await fetch("https://casinoremedial.onrender.com/api/juegos", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const Juegos = () => {
   };
 
   const handleDeleteJuego = async (id) => {
-    const response = await fetch(`http://localhost:4000/api/juegos/${id}`, {
+    const response = await fetch(`https://casinoremedial.onrender.com/api/juegos/${id}`, {
       method: "DELETE",
     });
     if (response.ok) {
@@ -71,7 +71,7 @@ const Juegos = () => {
 
   const handleUpdateJuego = async (e) => {
     e.preventDefault();
-    const response = await fetch(`http://localhost:4000/api/juegos/${juegoEditado._id}`, {
+    const response = await fetch(`https://casinoremedial.onrender.com/api/juegos/${juegoEditado._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

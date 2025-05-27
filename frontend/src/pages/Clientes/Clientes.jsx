@@ -18,14 +18,14 @@ const Clientes = () => {
   }, []);
 
   const fetchClientes = async () => {
-    const response = await fetch("http://localhost:4000/api/clientes");
+    const response = await fetch("https://casinoremedial.onrender.com/api/clientes");
     const data = await response.json();
     setClientes(data);
   };
 
   const handleAddCliente = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/api/clientes", {
+    const response = await fetch("https://casinoremedial.onrender.com/api/clientes", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const Clientes = () => {
   };
 
   const handleDeleteCliente = async (id) => {
-    const response = await fetch(`http://localhost:4000/api/clientes/${id}`, {
+    const response = await fetch(`https://casinoremedial.onrender.com/api/clientes/${id}`, {
       method: "DELETE",
     });
     if (response.ok) {
@@ -71,7 +71,7 @@ const Clientes = () => {
 
   const handleUpdateCliente = async (e) => {
     e.preventDefault();
-    const response = await fetch(`http://localhost:4000/api/clientes/${clienteEditado._id}`, {
+    const response = await fetch(`https://casinoremedial.onrender.com/api/clientes/${clienteEditado._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
