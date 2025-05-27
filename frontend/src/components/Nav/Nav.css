@@ -1,0 +1,19 @@
+.navbary {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    z-index: 99999 !important;
+}
+
+.itemnav {
+    color: #ffffff !important;
+    padding-left: 10px;
+}
+
+/* Agregar una línea roja debajo del enlace activo */
+.nav-link.active {
+    border-bottom: 2px solid #a40000; /* Línea roja debajo del enlace activo */
+}
