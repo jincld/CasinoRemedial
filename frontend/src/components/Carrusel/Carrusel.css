@@ -13,6 +13,10 @@
     margin: 0;
     box-sizing: border-box; /* Asegura que el espaciado se maneje correctamente */
   }
+
+  .colorcontroler:hover{
+    background-color: #f0f8ff00;
+  }
   
   
   

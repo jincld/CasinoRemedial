@@ -16,10 +16,10 @@ function Nav() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <NavLink className="nav-link itemnav" to="/" activeClassName="active">Juegos</NavLink>
+                  <NavLink className="nav-link itemnav" to="/juegos" activeClassName="active">Juegos</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link itemnav" to="/" activeClassName="active">Clientes</NavLink>
+                  <NavLink className="nav-link itemnav" to="/clientes" activeClassName="active">Clientes</NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link itemnav" to="/" activeClassName="active">Salir</NavLink>
