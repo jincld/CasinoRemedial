@@ -1,0 +1,89 @@
+body, html, #root {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnVvbm03andqdXp3ZGswZ2ZmdWdzYXBqeTR3NXdjbWR3NDl2bDNiNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2YHdXovMSv1NtO6V4n/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
+    filter: grayscale(100%);
+    z-index: 0; /* fondo GIF */
+  }
+  
+  .background-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('degradado.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .background-poker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('pokerback.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 1;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  
+  .center-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.4); /* menos opaco para que se vea el blur */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 620px;
+    z-index: 5; /* encima de todo */
+  
+    backdrop-filter: blur(10px); /* desenfoca el fondo */
+    -webkit-backdrop-filter: blur(10px); /* para Safari */
+  }
+  
+  
+  .casino-logo {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+  
+  .start-button {
+    background-color: #000000;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #a40000;
+  }
+  
