@@ -22,7 +22,7 @@ body, html, #root {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('degradado.png') no-repeat center center fixed;
+    background: url('/degradado.png') no-repeat center center fixed;
     background-size: cover;
     opacity: 0.8;
     z-index: 1;
@@ -35,7 +35,7 @@ body, html, #root {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('pokerback.png') no-repeat center center fixed;
+    background: url('/pokerback.png') no-repeat center center fixed;
     background-size: cover;
     opacity: 1;
     z-index: 2;
